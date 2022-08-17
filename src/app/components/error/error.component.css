@@ -1,0 +1,24 @@
+.error-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0;
+  top: 0;
+  background-color: rgb(228, 28, 28);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.error-close {
+  position: absolute;
+  margin: auto 0;
+  right: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  background: rgb(228, 28, 28);
+  cursor: pointer;
+}

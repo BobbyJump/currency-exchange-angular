@@ -1,0 +1,33 @@
+<form [formGroup]="form" class="converter" >
+  <div class="converter__group">
+    <input
+      class="converter__group-input"
+      type="number"
+      [value]="form.value.firstAmount"
+      formControlName="firstAmount"
+      placeholder="Amount"
+      (ngModelChange)="changeFirstInput()"
+    >
+    <select placeholder="Currency" class="converter__group-select" name="" id="" formControlName="firstSelect" (ngModelChange)="changeFirstSelect()">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+  <img src="../../../assets/up-and-down-arrows.png" alt="Arrows">
+  <div class="converter__group">
+    <input
+      class="converter__group-input"
+      type="number"
+      [value]="form.value.secondAmount"
+      formControlName="secondAmount"
+      placeholder="Amount"
+      (ngModelChange)="changeSecondInput()"
+    >
+    <select placeholder="Currency" class="converter__group-select" name="" id="" formControlName="secondSelect" (ngModelChange)="changeSecondSelect()">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+</form>

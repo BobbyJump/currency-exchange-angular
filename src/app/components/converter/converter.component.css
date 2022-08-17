@@ -1,0 +1,39 @@
+.converter {
+  height: fit-content;
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto 0;
+}
+.converter__group {
+  width: 100%;
+  display: flex;
+}
+.converter__group-input {
+  width: 70%;
+  height: 40px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.converter__group-select {
+  width: 30%;
+  height: 44px;
+}
+.converter__group:last-child {
+  margin-top: 100px;
+}
+.converter__group-input,
+.converter__group-select {
+  font-size: 20px;
+  color: #364958;
+  text-align: center;
+  border: 1px solid #87BBA2;
+  background: #ffe77a;
+  box-shadow: 8px 8px 30px -5px rgba(0,0,0,0.5);
+}
+img {
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
